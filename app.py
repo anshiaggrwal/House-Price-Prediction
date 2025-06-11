@@ -2,6 +2,7 @@ from flask import Flask, render_template, request #render template is used to ac
 #request sends a request to index.html file i.e ask for values
 import pickle
 import numpy as np
+import os
 
 app = Flask(__name__) #initialize our flask app
 
@@ -43,4 +44,5 @@ def predict():
     return render_template('index.html', prediction_text = f"predicted price of house is {output}")
 
 if __name__ == "__main__":
-    app.run(debug = True)
+    port = int(os.environ.get("PORT", 5000))
+    app.run(host="0.0.0.0", port=port, debug=True) #to deploy on render bind Flask app to 0.0.0.0 for Render deployment
