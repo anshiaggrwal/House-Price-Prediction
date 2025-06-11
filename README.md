@@ -5,7 +5,7 @@ A simple machine learning web application that predicts house prices based on us
 
 ## 🚀 Live Demo
 
-👉 [Check it out here](https://house-price-prediction-9ruy.onrender.com/predict)
+👉 [Check it out here](https://house-price-prediction-9ruy.onrender.com/)
 
 
 ## 🛠️ Technologies Used
